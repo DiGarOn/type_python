@@ -2,7 +2,7 @@
 
 class var {
 private:
-    std::string type;
+    string type;
     auto val;
 public:
     //конструктор без параметров, для работы надо досоздать дочерний класс MyInt
@@ -20,5 +20,8 @@ public:
         type = "double";
         val = MyDouble(a); //надо досоздать класс MyDouble
     }
-    //окнструкторы с 
+    //конструкторы с параметрами для создания переменной типа string
+    var(string a) {
+        type = ""
+    }
 }
