@@ -6,22 +6,17 @@ private:
     auto val;
 public:
     //конструктор без параметров, для работы надо досоздать дочерний класс MyInt
-    var() {
-        type = "int";
-        val = MyInt b(0); //надо досоздать класс MyInt
-    }
+    var();
     //конструктор с параметрами для создания переменной типа инт
-    var(int a) {
-        type = "int";
-        val = MyInt b(a); //надо досоздать класс MyInt
-    }
+    var(int a);
     //конструктор с параметрами для создания переменной типа дабл
-    var(double a) {
-        type = "double";
-        val = MyDouble(a); //надо досоздать класс MyDouble
-    }
+    var(double a);
     //конструкторы с параметрами для создания переменной типа string
-    var(string a) {
-        type = ""
-    }
+    var(string a);
+
+    getType()const;
+    getVal()const;
+
+    setType();
+    setVal();
 }
