@@ -1,5 +1,7 @@
+#ifndef PARENT_H
+#define PARENT_H
 #include <string>
-
+using std::string;
 class var {
 private:
     string type;
@@ -14,9 +16,10 @@ public:
     //конструкторы с параметрами для создания переменной типа string
     var(string a);
 
-    getType()const;
-    getVal()const;
+    string getType() const;
+    auto getVal()const;
 
-    setType();
-    setVal();
+    void setType(const string&);
+    void setVal(const auto&);
 }
+#endif
